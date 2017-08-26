@@ -1,4 +1,4 @@
-New-item -path $ENV:temp\test –type directory
+New-item -path $ENV:temp\test -type directory
 Copy-Item -Path $env:temp\testing123.txt -Destination $env:temp\test
 timeout 10
 $SMTPServer = 'smtp.gmail.com'
