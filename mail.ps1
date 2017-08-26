@@ -1,5 +1,5 @@
 New-item -path $ENV:temp\test –type directory
-Copy-Item -Path $env:temp\testing123.txt -Destination $env:temp\test\
+Copy-Item -Path $env:temp\testing123.txt -Destination $env:temp\test
 timeout 10
 $SMTPServer = 'smtp.gmail.com'
 $SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
